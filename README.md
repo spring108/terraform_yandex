@@ -18,6 +18,8 @@
   - unzip terraform_1.7.0_linux_amd64.zip
   - cp ./terraform /bin
   - terraform --version
+  - ## configure terraform - set providers-mirror from yandex
+  - nano ~/.terraformrc
   - ## load project
   - cd /home/igor
   - git clone https://github.com/spring108/terraform_yandex.git
