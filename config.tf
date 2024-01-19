@@ -53,7 +53,7 @@ resource "yandex_compute_instance" "vm-1" {
   # init VM -------------------------
   connection {
     type     = "ssh"
-    user     = "user"
+    user     = "spring"
     private_key = file("./private_key.ppk")
     host = yandex_compute_instance.vm-1.network_interface.0.nat_ip_address
   }
