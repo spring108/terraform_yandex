@@ -38,7 +38,7 @@ resource "yandex_compute_instance" "vm-1" {
     memory = 2
   }
   boot_disk {
-    disk_id = yandex_disk.ubuntu2004-15GB.id
+    disk_id = yandex_compute_disk.ubuntu2004-15GB.id
   }
   network_interface {
     subnet_id = "e9buvssk2htbkq921avo"
@@ -77,15 +77,15 @@ resource "yandex_compute_instance" "vm-1" {
 ### TEMPLATES
 #############################################################
 # boot disk template = ubuntu 20.04
-data "yandex_disk" "ubuntu2004_image" {
+data "yandex_compute_disk" "ubuntu2004_image" {
   family = "ubuntu-2004-lts"
 }
 
 # boot disk template = ubuntu 20.04 with 15GB
-resource "yandex_disk" "ubuntu2004-15GB" {
+resource "yandex_compute_disk" "ubuntu2004-15GB" {
   type     = "network-hdd"
   zone     = "ru-central1-a"
-  image_id = data.yandex_disk.ubuntu2004_image.id
+  image_id = data.yandex_compute_disk.ubuntu2004_image.id
   size = 15
 }
 
