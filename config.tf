@@ -77,15 +77,15 @@ resource "yandex_compute_instance" "vm-1" {
 ### TEMPLATES
 #############################################################
 # boot disk template = ubuntu 20.04
-data "yandex_compute_disk" "ubuntu2004_image" {
-  family = "ubuntu-2004-lts"
-}
+#data "yandex_compute_disk" "ubuntu2004_image" {
+#  family = "ubuntu-2004-lts"
+#}
 
 # boot disk template = ubuntu 20.04 with 15GB
 resource "yandex_compute_disk" "ubuntu2004-15GB" {
   type     = "network-hdd"
   zone     = "ru-central1-a"
-  image_id = data.yandex_compute_disk.ubuntu2004_image.id
+  image_id = "ubuntu-2004-lts" #data.yandex_compute_disk.ubuntu2004_image.id
   size = 15
 }
 
