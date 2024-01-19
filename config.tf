@@ -31,10 +31,10 @@ provider "yandex" {
 #############################################################
 # vm-1 resource configurations
 resource "yandex_compute_instance" "vm-1" {
-  name = "my_vm1"
+  name = "myvm1"
   allow_stopping_for_update = true
   resources {
-    cores  = 1
+    cores  = 2
     memory = 2
   }
   boot_disk {
