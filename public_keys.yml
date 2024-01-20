@@ -4,7 +4,7 @@ datasource:
   strict_id: false
 ssh_pwauth: no
 users:
-  - name: spring
+  - name: api-user
     groups: sudo
     shell: /bin/bash
     sudo: 'ALL=(ALL) NOPASSWD:ALL'
