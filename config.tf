@@ -46,7 +46,7 @@ resource "yandex_compute_instance" "vm-1" {
   }
   metadata = {
     #user public ssh-authorized-keys in YAML-file
-    user-data = "${file("./public_key.yml")}"
+    user-data = "${file("./public_keys.yml")}"
   }
   scheduling_policy {
     preemptible = true 
