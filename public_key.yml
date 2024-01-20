@@ -5,4 +5,4 @@ users:
     shell: /bin/bash
     sudo: 'ALL=(ALL) NOPASSWD:ALL'
     ssh-authorized-keys:
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCRccKf0jtP1rFZL3G5+4BSYlqnCz2UsMTlU/E+lyer1waGi+BzCLZ9MwaZTKZZElchrbaRH05i2bD7PlS5kT6rKG/aOXB7fdcq9HBwJa9vY3yZ0b1u3m9+NiwuOsH0kSm8WPj4WWpQQiLgjDTaSYh47GaR24clOuPi+tjKnTmQX/QU34mxQI6VynbUGn6qCpQN/kPe+SZkfZnBDEqi6f7yGM1cTw/Zx92cWv0v07PqAxuA/yTi8CpdjojsHMUQY/BmRwxW3emhOjDKERqQuIehcgRuQscvpcbpoWFFEbbUDs9xry4pu2xX2OcrTMs/wy28CrH2od8WbRC0FSfVexE1 spring
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCRccKf0jtP1rFZL3G5+4BSYlqnCz2UsMTlU/E+lyer1waGi+BzCLZ9MwaZTKZZElchrbaRH05i2bD7PlS5kT6rKG/aOXB7fdcq9HBwJa9vY3yZ0b1u3m9+NiwuOsH0kSm8WPj4WWpQQiLgjDTaSYh47GaR24clOuPi+tjKnTmQX/QU34mxQI6VynbUGn6qCpQN/kPe+SZkfZnBDEqi6f7yGM1cTw/Zx92cWv0v07PqAxuA/yTi8CpdjojsHMUQY/BmRwxW3emhOjDKERqQuIehcgRuQscvpcbpoWFFEbbUDs9xry4pu2xX2OcrTMs/wy28CrH2od8WbRC0FSfVexE1 ubuntu
