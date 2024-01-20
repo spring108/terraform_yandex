@@ -1,4 +1,4 @@
-#cloud-config with ssh-rsa public key
+#ssh-rsa public keys
 users:
   - name: spring
     groups: sudo

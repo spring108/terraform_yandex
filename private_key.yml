@@ -1,0 +1,8 @@
+#ssh-rsa private keys
+users:
+  - name: spring
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh-authorized-keys:
+      - MY_PRIVATE_SSH_RSA_KEY
