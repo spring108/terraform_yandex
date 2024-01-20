@@ -45,16 +45,19 @@ resource "yandex_compute_instance" "vm-1" {
     nat       = true
   }
   metadata = {
-    user-data = "${file("./public_key.yml")}" #user public ssh-authorized-keys in file
+    #user public ssh-authorized-keys in file
+    user-data = "${file("./public_key.yml")}"
   }
   scheduling_policy {
     preemptible = true 
   }
+
+
   # init VM -------------------------
   connection {
     type     = "ssh"
     user     = "spring"
-    private_key = file("./private_key.yml")
+    private_key = file("./id_rsa")
     host = yandex_compute_instance.vm-1.network_interface.0.nat_ip_address
   }
   #provisioner "file" {
