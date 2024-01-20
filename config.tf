@@ -57,10 +57,7 @@ resource "yandex_compute_instance" "vm-1" {
   connection {
     type     = "ssh"
     user     = "spring"
-    
-    #user private ssh-authorized-keys in native file
-    private_key = file("./id_rsa")
-    
+    private_key = file("/root/.ssh/id_rsa")
     host = yandex_compute_instance.vm-1.network_interface.0.nat_ip_address
   }
   #provisioner "file" {
