@@ -1,4 +1,4 @@
-## ДЗ 14 - terraform yandex template
+## ДЗ 14 - terraform for Yandex-Cloud TEMPLATE
 
   - ## convert my terraform OAuth-token to IAM-token
   - sudo curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
@@ -18,7 +18,7 @@
   - unzip terraform_1.7.0_linux_amd64.zip
   - cp ./terraform /bin
   - terraform --version
-  - ## configure terraform - set providers-mirror from yandex
+  - ## configure terraform: setup providers-mirror from yandex
   - nano ~/.terraformrc
   - ## load project
   - cd /home/igor
